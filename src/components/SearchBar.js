@@ -18,7 +18,7 @@ class SearchBar extends React.Component{
                 <form 
                 onSubmit={this.onFormSubmit}className="ui form">
                     <div className="field">
-                        <label>Image Search</label>
+                        <label>Image Search:</label>
                         {/* לא שמים סוגריים אחרי שמעבירים את הקולבק פנקשיין כדי לא לקרוא לה כל פעם שמבצעים רנדר בקומפוננטה */}
                         <input 
                         autocomplete="on"
