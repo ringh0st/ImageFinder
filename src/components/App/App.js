@@ -1,8 +1,8 @@
 import React from 'react';
 // import axios from 'axios'
-import SearchBar from './SearchBar';
-import unsplash from '../apis/unsplash';
-import ImagesList from './ImagesList';
+import SearchBar from '../SearchBar/SearchBar';
+import unsplash from '../../apis/unsplash';
+import ImagesList from '../ImagesList/ImagesList';
 
 class App extends React.Component{
     state = {images:[]};
