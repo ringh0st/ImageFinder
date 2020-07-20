@@ -1,10 +1,10 @@
 import React from 'react';
+import ImageCard from '../ImageCard/ImageCard'
 import {ImageContainer} from './ImagesList.Style'
 const ImagesList = (props) =>{
-    const images = props.images.map(({id, description,urls} )=>{
-        return <ImageContainer style={{width:'40vw'}} key={id} alt={description} src={urls.regular}/>;
+    const images = props.images.map((image)=>{
+        return <ImageCard id={image.id} image={image}/>;
     });
-    
-    return <div > {images}</div>
+    return <ImageContainer> {images}</ImageContainer>
 }
 export default ImagesList
